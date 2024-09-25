@@ -3,14 +3,10 @@ package com.abhishek.onlineshop.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
-import com.abhishek.onlineshop.R;
 import com.abhishek.onlineshop.databinding.ActivityProfileBinding;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -90,34 +86,23 @@ public class ProfileActivity extends BaseActivity {
     }
 
     private void initLogout() {
-        binding.logOutBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                FirebaseAuth.getInstance().signOut();
-                editor.putBoolean("isLoggedIn", false);
-                editor.apply();
-                startActivity(new Intent(ProfileActivity.this,LoginActivity.class));
-                finish();
-            }
+        binding.logOutBtn.setOnClickListener(view -> {
+            FirebaseAuth.getInstance().signOut();
+            editor.putBoolean("isLoggedIn", false);
+            editor.apply();
+            startActivity(new Intent(ProfileActivity.this,LoginActivity.class));
+            finish();
         });
 
     }
 
     private void initBackToHome() {
 
-        binding.backBtn1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(ProfileActivity.this,MainActivity.class));
-                finish();
-            }
+        binding.backBtn1.setOnClickListener(view -> {
+            startActivity(new Intent(ProfileActivity.this,MainActivity.class));
+            finish();
         });
 
-        binding.backBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(ProfileActivity.this,MainActivity.class));
-            }
-        });
+        binding.backBtn.setOnClickListener(view -> startActivity(new Intent(ProfileActivity.this,MainActivity.class)));
     }
 }
