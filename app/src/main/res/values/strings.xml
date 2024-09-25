@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Online Shop</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="your_payment_is_complete_please_check_the_delivery_status_at_order_tracking_page">Your Payment is complete.Please check the delivery status at <b>Order Tracking </b> page</string>
+</resources>

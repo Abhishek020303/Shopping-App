@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "941065638525",
+    "project_id": "online-shop-e7ebb",
+    "storage_bucket": "online-shop-e7ebb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:941065638525:android:6914e0f682641963f6d714",
+        "android_client_info": {
+          "package_name": "com.abhishek.onlineshop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuOdFLPqIPzqWmrLEnQPSAMJ-KSwzs6bE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
